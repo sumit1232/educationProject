@@ -1,0 +1,6 @@
+{
+  "name": "Secure MERN Student Management System",
+  "description": "Production-ready MERN Stack Student Management System with advanced multi-method authentication, JWT session rotation, RBAC (Admin, Teacher, Student), and comprehensive academic management.",
+  "requestFramePermissions": ["camera"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

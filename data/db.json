@@ -1,0 +1,448 @@
+{
+  "users": [
+    {
+      "id": "usr-admin-01",
+      "name": "Dr. Eleanor Vance",
+      "email": "admin@school.edu",
+      "passwordHash": "$2b$12$5.vUOaFCWQAENcUKXn1UruXNwzZqX5VJ3MUSmofc3hzrNxLDx.Ayi",
+      "role": "admin",
+      "avatar": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=150&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "phone": "+1 (555) 234-5678",
+      "createdAt": "2025-09-17T05:01:31.775Z",
+      "department": "Administration"
+    },
+    {
+      "id": "usr-teacher-01",
+      "name": "Prof. Marcus Brody",
+      "email": "teacher@school.edu",
+      "passwordHash": "$2b$12$buRJm9BY.3rcC1dXhU1B6OuRFLVL8xOAIdDtHMyBES1jXi1WS0wiu",
+      "role": "teacher",
+      "avatar": "https://images.unsplash.com/photo-1568602471122-7832951cc4c5?w=150&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "phone": "+1 (555) 345-6789",
+      "createdAt": "2026-03-01T05:01:31.775Z",
+      "department": "Computer Science",
+      "teacherId": "TCH-101"
+    },
+    {
+      "id": "usr-teacher-02",
+      "name": "Dr. Sarah Connor",
+      "email": "s.connor@school.edu",
+      "passwordHash": "$2b$12$buRJm9BY.3rcC1dXhU1B6OuRFLVL8xOAIdDtHMyBES1jXi1WS0wiu",
+      "role": "teacher",
+      "avatar": "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=150&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "phone": "+1 (555) 456-7890",
+      "createdAt": "2026-03-21T05:01:31.775Z",
+      "department": "Mathematics",
+      "teacherId": "TCH-102"
+    },
+    {
+      "id": "usr-student-01",
+      "name": "Alex Rivera",
+      "email": "student@school.edu",
+      "passwordHash": "$2b$12$m44x8/edew1PIQLNXdyB8uyWthE..J13PV6Rc73IY0nJerCouqk9C",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1534528741775-53994a69daeb?w=150&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "phone": "+1 (555) 987-6543",
+      "createdAt": "2026-05-20T05:01:31.775Z",
+      "department": "Grade 11 - Science",
+      "studentId": "STU-2026-001"
+    },
+    {
+      "id": "usr-student-02",
+      "name": "Chloe Zhao",
+      "email": "chloe.z@school.edu",
+      "passwordHash": "$2b$12$m44x8/edew1PIQLNXdyB8uyWthE..J13PV6Rc73IY0nJerCouqk9C",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "phone": "+1 (555) 678-1234",
+      "createdAt": "2026-06-19T05:01:31.775Z",
+      "department": "Grade 11 - Science",
+      "studentId": "STU-2026-002"
+    },
+    {
+      "id": "usr-student-03",
+      "name": "Liam Henderson",
+      "email": "liam.h@school.edu",
+      "passwordHash": "$2b$12$m44x8/edew1PIQLNXdyB8uyWthE..J13PV6Rc73IY0nJerCouqk9C",
+      "role": "student",
+      "avatar": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&auto=format&fit=crop&q=80",
+      "isVerified": true,
+      "phone": "+1 (555) 432-8765",
+      "createdAt": "2026-07-19T05:01:31.775Z",
+      "department": "Grade 11 - Science",
+      "studentId": "STU-2026-003"
+    }
+  ],
+  "students": [
+    {
+      "id": "std-01",
+      "userId": "usr-student-01",
+      "name": "Alex Rivera",
+      "email": "student@school.edu",
+      "studentId": "STU-2026-001",
+      "grade": "Grade 11",
+      "section": "A",
+      "guardianName": "Elena Rivera",
+      "guardianPhone": "+1 (555) 901-2345",
+      "enrollmentDate": "2024-09-01",
+      "status": "active"
+    },
+    {
+      "id": "std-02",
+      "userId": "usr-student-02",
+      "name": "Chloe Zhao",
+      "email": "chloe.z@school.edu",
+      "studentId": "STU-2026-002",
+      "grade": "Grade 11",
+      "section": "A",
+      "guardianName": "Wei Zhao",
+      "guardianPhone": "+1 (555) 789-0123",
+      "enrollmentDate": "2024-09-01",
+      "status": "active"
+    },
+    {
+      "id": "std-03",
+      "userId": "usr-student-03",
+      "name": "Liam Henderson",
+      "email": "liam.h@school.edu",
+      "studentId": "STU-2026-003",
+      "grade": "Grade 11",
+      "section": "A",
+      "guardianName": "Robert Henderson",
+      "guardianPhone": "+1 (555) 654-3210",
+      "enrollmentDate": "2024-09-01",
+      "status": "active"
+    }
+  ],
+  "teachers": [
+    {
+      "id": "tch-01",
+      "userId": "usr-teacher-01",
+      "name": "Prof. Marcus Brody",
+      "email": "teacher@school.edu",
+      "teacherId": "TCH-101",
+      "department": "Computer Science",
+      "specialization": "Software Architecture & Algorithms",
+      "qualification": "Ph.D. in Computer Science",
+      "joiningDate": "2021-08-15"
+    },
+    {
+      "id": "tch-02",
+      "userId": "usr-teacher-02",
+      "name": "Dr. Sarah Connor",
+      "email": "s.connor@school.edu",
+      "teacherId": "TCH-102",
+      "department": "Mathematics",
+      "specialization": "Discrete Mathematics & Calculus",
+      "qualification": "M.Sc., Ph.D. in Applied Mathematics",
+      "joiningDate": "2022-01-10"
+    }
+  ],
+  "classes": [
+    {
+      "id": "cls-01",
+      "name": "Computer Science - Section A",
+      "code": "CS-101-A",
+      "grade": "Grade 11",
+      "section": "A",
+      "teacherId": "tch-01",
+      "teacherName": "Prof. Marcus Brody",
+      "room": "Lab 3B",
+      "studentCount": 28
+    },
+    {
+      "id": "cls-02",
+      "name": "Advanced Mathematics - Section A",
+      "code": "MATH-201-A",
+      "grade": "Grade 11",
+      "section": "A",
+      "teacherId": "tch-02",
+      "teacherName": "Dr. Sarah Connor",
+      "room": "Room 204",
+      "studentCount": 30
+    },
+    {
+      "id": "cls-03",
+      "name": "Physics Laboratory",
+      "code": "PHY-301-B",
+      "grade": "Grade 12",
+      "section": "B",
+      "teacherId": "tch-01",
+      "teacherName": "Prof. Marcus Brody",
+      "room": "Physics Lab 1",
+      "studentCount": 24
+    }
+  ],
+  "subjects": [
+    {
+      "id": "sub-01",
+      "name": "Data Structures & Algorithms",
+      "code": "CS-301",
+      "teacherName": "Prof. Marcus Brody",
+      "credits": 4,
+      "classGrade": "Grade 11"
+    },
+    {
+      "id": "sub-02",
+      "name": "Linear Algebra & Calculus",
+      "code": "MTH-302",
+      "teacherName": "Dr. Sarah Connor",
+      "credits": 4,
+      "classGrade": "Grade 11"
+    },
+    {
+      "id": "sub-03",
+      "name": "Web Engineering & Database Design",
+      "code": "CS-303",
+      "teacherName": "Prof. Marcus Brody",
+      "credits": 3,
+      "classGrade": "Grade 11"
+    },
+    {
+      "id": "sub-04",
+      "name": "Applied Physics & Electromagnetics",
+      "code": "PHY-304",
+      "teacherName": "Dr. Sarah Connor",
+      "credits": 4,
+      "classGrade": "Grade 12"
+    }
+  ],
+  "attendance": [
+    {
+      "id": "att-01",
+      "studentId": "std-01",
+      "studentName": "Alex Rivera",
+      "classId": "cls-01",
+      "date": "2026-09-14",
+      "status": "Present",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-02",
+      "studentId": "std-02",
+      "studentName": "Chloe Zhao",
+      "classId": "cls-01",
+      "date": "2026-09-14",
+      "status": "Present",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-03",
+      "studentId": "std-03",
+      "studentName": "Liam Henderson",
+      "classId": "cls-01",
+      "date": "2026-09-14",
+      "status": "Late",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-04",
+      "studentId": "std-01",
+      "studentName": "Alex Rivera",
+      "classId": "cls-01",
+      "date": "2026-09-15",
+      "status": "Present",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-05",
+      "studentId": "std-02",
+      "studentName": "Chloe Zhao",
+      "classId": "cls-01",
+      "date": "2026-09-15",
+      "status": "Absent",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-06",
+      "studentId": "std-03",
+      "studentName": "Liam Henderson",
+      "classId": "cls-01",
+      "date": "2026-09-15",
+      "status": "Present",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-07",
+      "studentId": "std-01",
+      "studentName": "Alex Rivera",
+      "classId": "cls-01",
+      "date": "2026-09-16",
+      "status": "Present",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-08",
+      "studentId": "std-02",
+      "studentName": "Chloe Zhao",
+      "classId": "cls-01",
+      "date": "2026-09-16",
+      "status": "Present",
+      "markedBy": "Prof. Marcus Brody"
+    },
+    {
+      "id": "att-09",
+      "studentId": "std-03",
+      "studentName": "Liam Henderson",
+      "classId": "cls-01",
+      "date": "2026-09-16",
+      "status": "Excused",
+      "markedBy": "Prof. Marcus Brody"
+    }
+  ],
+  "assignments": [
+    {
+      "id": "asg-01",
+      "title": "Binary Search Tree & Graph Traversal Implementation",
+      "subject": "Data Structures & Algorithms",
+      "classGrade": "Grade 11",
+      "teacherId": "tch-01",
+      "teacherName": "Prof. Marcus Brody",
+      "description": "Implement BFS and DFS algorithms with cycle detection in TypeScript/Python. Include benchmark test cases and complexity analysis report.",
+      "dueDate": "2026-09-22",
+      "totalMarks": 50,
+      "submissionsCount": 19
+    },
+    {
+      "id": "asg-02",
+      "title": "Calculus Optimization & Vector Fields Problem Set",
+      "subject": "Linear Algebra & Calculus",
+      "classGrade": "Grade 11",
+      "teacherId": "tch-02",
+      "teacherName": "Dr. Sarah Connor",
+      "description": "Complete problems 14 through 28 on Lagrange multipliers and curl/divergence theorems with step-by-step proofs.",
+      "dueDate": "2026-09-25",
+      "totalMarks": 40,
+      "submissionsCount": 22
+    },
+    {
+      "id": "asg-03",
+      "title": "Secure Full-Stack Authentication Architecture Blueprint",
+      "subject": "Web Engineering & Database Design",
+      "classGrade": "Grade 11",
+      "teacherId": "tch-01",
+      "teacherName": "Prof. Marcus Brody",
+      "description": "Design a threat model diagram illustrating HttpOnly refresh cookie rotation, bcrypt 12 rounds hashing, and RBAC middleware filters.",
+      "dueDate": "2026-09-29",
+      "totalMarks": 100,
+      "submissionsCount": 14
+    }
+  ],
+  "examResults": [
+    {
+      "id": "res-01",
+      "studentId": "std-01",
+      "studentName": "Alex Rivera",
+      "examName": "Mid-Term Examination 2026",
+      "subject": "Data Structures & Algorithms",
+      "marksObtained": 94,
+      "totalMarks": 100,
+      "grade": "A+",
+      "remarks": "Outstanding algorithm design and code elegance.",
+      "date": "2026-08-28"
+    },
+    {
+      "id": "res-02",
+      "studentId": "std-01",
+      "studentName": "Alex Rivera",
+      "examName": "Mid-Term Examination 2026",
+      "subject": "Linear Algebra & Calculus",
+      "marksObtained": 88,
+      "totalMarks": 100,
+      "grade": "A",
+      "remarks": "Excellent mastery of eigenvalue matrices.",
+      "date": "2026-08-30"
+    },
+    {
+      "id": "res-03",
+      "studentId": "std-02",
+      "studentName": "Chloe Zhao",
+      "examName": "Mid-Term Examination 2026",
+      "subject": "Data Structures & Algorithms",
+      "marksObtained": 91,
+      "totalMarks": 100,
+      "grade": "A",
+      "remarks": "Superb problem solving.",
+      "date": "2026-08-28"
+    },
+    {
+      "id": "res-04",
+      "studentId": "std-03",
+      "studentName": "Liam Henderson",
+      "examName": "Mid-Term Examination 2026",
+      "subject": "Data Structures & Algorithms",
+      "marksObtained": 82,
+      "totalMarks": 100,
+      "grade": "B+",
+      "remarks": "Good progress, review time complexity proofs.",
+      "date": "2026-08-28"
+    }
+  ],
+  "notices": [
+    {
+      "id": "ntc-01",
+      "title": "Fall Semester Mid-Term Grade Reports Published",
+      "content": "Official mid-term examination transcripts have been uploaded to all student and guardian portals. Any grade reconciliation requests must be submitted within 10 days.",
+      "category": "Academic",
+      "postedBy": "Dr. Eleanor Vance",
+      "postedRole": "Dean of Academic Affairs",
+      "createdAt": "2026-09-10T09:00:00.000Z",
+      "isUrgent": false
+    },
+    {
+      "id": "ntc-02",
+      "title": "Campus Cyber Defense & Multi-Factor Security Mandatory Upgrade",
+      "content": "In compliance with modern safety standards, all student and faculty accounts now require active JWT session validation and email OTP verification for off-campus logins.",
+      "category": "Administrative",
+      "postedBy": "IT Security Operations",
+      "postedRole": "Systems Admin",
+      "createdAt": "2026-09-12T14:30:00.000Z",
+      "isUrgent": true
+    },
+    {
+      "id": "ntc-03",
+      "title": "Annual STEM Innovation & Hackathon 2026",
+      "content": "Registration is now open for the 2026 Inter-School Hackathon. Teams of 3-4 students can register under their CS advisors before September 30.",
+      "category": "Event",
+      "postedBy": "Prof. Marcus Brody",
+      "postedRole": "CS Department Lead",
+      "createdAt": "2026-09-15T11:15:00.000Z",
+      "isUrgent": false
+    }
+  ],
+  "otps": [],
+  "refreshTokens": [
+    {
+      "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiJ1c3ItYWRtaW4tMDEiLCJlbWFpbCI6ImFkbWluQHNjaG9vbC5lZHUiLCJyb2xlIjoiYWRtaW4iLCJuYW1lIjoiRHIuIEVsZWFub3IgVmFuY2UiLCJpYXQiOjE3ODk2MjEzMDMsImV4cCI6MTc5MDIyNjEwM30.NBnbUYZg44__E8-DTl7Tk-VtTfiNQCRGQ_bTrPZKn8k",
+      "userId": "usr-admin-01",
+      "expiresAt": 1790226103334
+    }
+  ],
+  "auditLogs": [
+    {
+      "id": "log-1086a588",
+      "action": "LOGIN_SUCCESS",
+      "userEmail": "admin@school.edu",
+      "role": "admin",
+      "ip": "127.0.0.1",
+      "timestamp": "2026-09-17T05:01:43.336Z",
+      "status": "SUCCESS",
+      "details": "User authenticated via password + bcrypt. HttpOnly session cookies issued."
+    },
+    {
+      "id": "log-01",
+      "action": "SYSTEM_BOOT",
+      "userEmail": "system@internal",
+      "role": "system",
+      "ip": "127.0.0.1",
+      "timestamp": "2026-09-17T05:01:31.775Z",
+      "status": "SUCCESS",
+      "details": "Security middleware (Helmet, RateLimiter, CORS, JWT-HttpOnly) active"
+    }
+  ]
+}
